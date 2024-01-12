@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Night with Audio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gif.css">
+</head>
+
+<body>
+    <div class="background-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="" class="moon">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+    <!-- <div class="clock-container" >
+        <h1 class="text-light">00:00:00</h1>
+        <div class="mb-3">
+            <button class="btn btn-light" onclick="startStopwatch()">Start</button>
+            <button class="btn btn-light" onclick="stopStopwatch()">Stop</button>
+            <button class="btn btn-light" onclick="pauseStopwatch()">Pause</button>
+            <button class="btn btn-info" onclick="resetStopwatch()">Reset</button>
+            <button class="btn btn-success" onclick="lapStopwatch()">Lap</button>
+        </div>
+        <div id="lapTimes" class="mb-3"></div>
+    </div>
+
+    
+    <audio id="myAudio" controls>
+        <source src="https://www.youtube.com/watch?v=xtQcMx5WItE" type="audio/mp3">
+
+    </audio> -->
+    <div class="container">
+        <div class="timer-Display">
+            00 : 00 : 00 : 00
+        </div>
+        <ul class="laps"></ul>
+          <div class="buttons">
+            <button id="startTimer" onclick="start()">Start</button>
+            <button id="pauseTimer" onclick="pause()">Pause</button>
+            <button id="resetTime" onclick="reset()">Reset</button>
+            <button id="restartTimer" onclick="restart()">Restart</button>
+            <button id="lap" onclick="lap()">Lap</button>
+            <button id="resetLap" onclick="resetLap()">Reset Laps</button>
+        </div>
+    
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
